@@ -52,6 +52,7 @@ for(x in 150:301){ #it's only 301 because of the thinning, and 150 because of bu
   i = stacked_key6_fit[["values_iter"]][["theta_iter"]][[x]]
   #make into data frame 
   i <- as.data.frame(i)
+  print(x)
   
   #split the data frame into two depending on question status 
   thetas_char <- as_tibble(i[1:n_char_docs,])
